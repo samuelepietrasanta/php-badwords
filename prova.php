@@ -1,7 +1,10 @@
-<?php $variabile = "Fuck you (Fuck you), fuck you very, very much
-                    'Cause we hate what you do
-                    And we hate your whole crew
-                    So, please don't stay in touch"; ?>
+<?php 
+
+    $variabile = "Fuck you (Fuck you), fuck you very, very much
+                'Cause we hate what you do
+                And we hate your whole crew
+                So, please don't stay in touch"; 
+?>
 
 
 <!DOCTYPE html>
@@ -17,18 +20,20 @@
     <h1>TESTO ORIGINALE:</h1>
 
     <h3>
-        <?php echo  $variabile?>
-
+        <?php 
+            echo $variabile;
+        ?>
     </h3>
 
-    <br>
-    <br>
     <hr>
 
-    <h1>TESTO CENSURATO:
-    </h1>
+    <h1>TESTO CENSURATO:</h1>
 
-    <h3> <?php echo str_replace($_GET["censored"] , "***", $variabile) ?></h3>
+    <h3> 
+        <?php 
+            echo str_replace($_GET["censored"] , "***", $variabile);
+        ?>
+    </h3>
     
 </body>
 </html>
